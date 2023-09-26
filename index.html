@@ -4,15 +4,27 @@
   <div>
     <img src="Logo.png">
   </div>
-  
-  <div class="container">
-    <div class="column" style="background-color: #f0f0f0;">
-      <h3>Content for the left column goes here</h3>
-    </div>
-    <div class="column" style="background-color: #ccc;">
-      <h3>Content for the right column goes here</h3>
-    </div>
-  </div>
+
+  <div class="tabs-container">
+       <ul class="tabs">
+           <li class="tab" onclick="showContent(1)">Home page</li>
+           <li class="tab" onclick="showContent(2)">About</li>
+           <li class="tab" onclick="showContent(3)">Timeline</li>
+           <li class="tab" onclick="showContent(3)">meetings</li>
+           <li class="tab" onclick="showContent(3)">LLM</li>
+       </ul>
+       <div class="content">
+           <div id="content1" class="active">
+               Content for Tab 1
+           </div>
+           <div id="content2">
+               Content for Tab 2
+           </div>
+           <div id="content3">
+               Content for Tab 3
+           </div>
+       </div>
+   </div>
 
 </body>
 </html>
