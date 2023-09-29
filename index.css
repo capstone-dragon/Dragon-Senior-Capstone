@@ -74,7 +74,11 @@ b{
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8;*/
+  background-image: url('back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a:hover, button:hover {
