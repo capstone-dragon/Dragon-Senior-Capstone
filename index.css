@@ -3,6 +3,7 @@
   padding: 10px;
   display: flex;
   align-items: center;
+  background-color: #001E30;
 }
 .logo {
   width: 150px;
@@ -21,21 +22,19 @@
 
 .tab{
   margin-bottom: 10px;
-  cursor: pointer;
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 5px;
-
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px 20px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .tab:hover {
-  background-color: #f2f2f2;
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
 }
 
 .content {
@@ -74,14 +73,14 @@ b{
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 a:hover, button:hover {
-  opacity: 0.8;
+  opacity: 0.99;
 }
 
 h2 {
