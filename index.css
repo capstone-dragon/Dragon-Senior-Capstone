@@ -37,6 +37,11 @@
   transform: scale(1.05);
 }
 
+.tab.active {
+  background-color: black;
+  color: white;
+}
+
 .content {
   flex: 1;
   padding: 10px;
