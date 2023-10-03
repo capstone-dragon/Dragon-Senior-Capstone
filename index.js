@@ -1,8 +1,11 @@
 
-
 function showContent(tabNumber) {
+  const tabs = document.querySelectorAll('.tabs .tab');
   const contents = document.querySelectorAll('.content div');
-  contents.forEach(content => content.classList.remove('active'));
-  document.getElementById(`content${tabNumber}`).classList.add('active');
 
+  tabs.forEach(tab => tab.classList.remove('active'));
+  contents.forEach(content => content.classList.remove('active'));
+
+  tabs[tabNumber - 1].classList.add('active');
+  contents[tabNumber - 1].classList.add('active');
 }
