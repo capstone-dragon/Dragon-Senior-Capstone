@@ -71,7 +71,37 @@
           
         </div>
         <div id="content4">
-          Content for Tab Meeting/ will add with transcripts
+          
+          <h2>First Interview with Lockheed Martin</h2>
+
+          NB: In regards to the kind of scope of this project. Are there any particular functions or features that you wish to see implemented for this project?
+          AD: For the scope of the project the main that we’re looking for is just a simple input and output capability of the LM itself. The end goal is you are able to submit a simple sentence, some type of text that’s formatted whatever way you want, and get some type of the return that has the sentence restructured in the way that it fits the STE style guide and the process in which we want you to do this is by using a pre-existing large language model. We don’t have a preference for which one you use. 
+          NB:  Is there any specific rules that will need to be followed that emphasize more specifically on less is more or more technical writing? Is it more general for STE writing style?
+          AD: We’re looking for a more general approach to the STE writing style, but being able to showcase that it does follow the rules. Looking for more of a general approach that the sentence will follow the STE style guide. 
+          NB: For the open source LLM, after doing some research we found that probably the best one will be using Falcon, specifically Falcon 7B as opposed to Falcon 40B or Llama for reasons that Falcon itself is licensed with Apache 2.0 meaning that anyone can use it for commercial use or consumer use. Specifically you don’t have to pay royalties and 7B while it’s not as powerful at 40B and the reason why is because its 40 billion parameters versus 7 billion parameters. But the main reason why is because the more parameters you have the more computationally attensive it will be and 7B only requires 16GB of GPU memory and there is rarely any hardware devices that can actually run it. The 40B needs a 100BG of GPU memory so 7B will be more suited for the end consumer use due to the scope of this project and due to the scope of this project having a generalized approach we think that this will be a fine open source LLM. Is there any problems or concerns?
+
+          AD: Highly recommend you don’t need the 40B because I think that’d it be a bit overkill, 7B should be good enough for this application. 
+          AD: Would you be able to test it on your own individual machines?
+          NB: We’ll be using Google Colab and they allow the use of not only CPU devices but also GPU kind of computers. They allow the use of a T4 machine which barely meets the requirements for 16GB of GPU memory which is the minimum requirement. If that's the case, we can go higher on Google Colab machines, if not we can always use the HPCC. We will be using Falcob 7B, and Google Colab as our resource which is similar to Jupyter lab and notebook. More suited for machine learning. 
+          NB: We have to train the model with data sets, we’ll be using a mixture of public and private ones. Some public datasets that we’ll be using will be coming from hugging face and cackle these are community, these are platforms that provide the community with moss applications and for our purposes datasets, more specifically text generation. Are you fine with these platforms that we will be using?
+          AD: Yes, hugging faces is an excellent place to get publicly available data. Highly recommend using that one. 
+          NB: Could you provide us some datasets to train, test them all with it would allow us to get a better understanding of the desired output for the STE and more importantly for the model itself.
+          AD: For private datasets we don’t have any datasets available here at Lockheed for the STE specifically and part of the reason we chose STE as the style guide use for this project is specifically there’s a lot of public examples of it. And using private style guides like our own walkie takes a lot of paperwork and we’re kind of in the process of still filling out all that paperwork and getting it done. So for this project scope we intend for you to only use publicly available data for the STE style guide. 
+          NB: We’ll be creating our own STE style guide of writing style sentences along with public datasets not only online but hugging fee as well. Does that sound fine?
+          AD: Yes that is fine. 
+          NB:  As mentioned earlier, they would like a simple input and output for users to interact with. Specifically we’ve decided to more or less use a web interface like a website or something like that for it to be hooked onto the LM from the open source LM. Are there any concerns that you have with us using a web interface to receive input and give output to the users or is there another kind of system you want us to use instead? 
+          AD:  A web interface should be fine, it would be a really good showcase of actually the overall implementation of how this works. 
+          TD: Can you also make the interface availabe publicly, so that other people can use it?
+          NB: We’ll probably be using a public domain for the web interface. 
+          NB: As mentioned, there is a validation process. Are there any criteria you wish to emphasize on how the model should respond to certain datasets that is provided with or is it more just a generalized approach to the STE?
+          AD: Validating LLM’s is a very hot topic right now in the LLM community, getting proper validation so for this case we’re just gonna go for a generalized validation. In terms of implementing or in terms of making sure its perfect or rather making sure it’s along with the STE style guide. For validation you should be good just using some type of general validation.
+          NB:  Do you have any final concerns or any points you wish to emphasize for this project?
+          AD:  For Google Colab, does that allow multiple users or developers to work on code at the same time?
+          NB: Due to the mentioned requirements allowing to use different devices such as CPU or GPU should be able to share code online since it’s from google platform and google has been known to share files easily but if not, we’ll be using github as our primary to push code onto and retrieve code from that as a more centeralized hub. 
+          TD: Can I ask you to display or to show the validation result on the web interfaces as well rather than just input and output. Can you show some type of validation call on the web interface as well?
+          NB: We can try, but validation is a bit weird because it’s similar to testing but validation is more trying to be unbiased because testing is where we get get more specific use cases that are out there in random validation is trying to be more unbiased.
+
+          
         </div>
         <div id="content5">
           Content for Tab Other
