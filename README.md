@@ -3,11 +3,11 @@ We aim to empower users with a user-friendly interface that allows them to input
 Our Project Website:    
 https://capstone-dragon.github.io/Dragon-Senior-Capstone/
 
-Team Members:
-Kaitlyn Paiz
-Baowend Ouedraogo
-Noah Brunner
-Kimora Sananikone
-Dhan Limbu
+Team Members: 
+Kaitlyn Paiz  
+Baowend Ouedraogo  
+Noah Brunner  
+Kimora Sananikone  
+Dhan Limbu  
 
 
