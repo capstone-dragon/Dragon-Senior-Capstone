@@ -66,6 +66,9 @@
 #content1{
   text-align: center;
 }
+#content1 table{
+  margin: 0 auto;
+}
 
 th {
   text-align:left;
