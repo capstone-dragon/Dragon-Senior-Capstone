@@ -63,6 +63,9 @@
 .content div.active {
   display: block;
 }
+#content1{
+  text-align: center;
+}
 
 th {
   text-align:left;
