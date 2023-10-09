@@ -21,10 +21,17 @@
       </ul>
       <div class="content">
         <div id="content1" class="active">
+<<<<<<< HEAD
           <h2 class"mission">Our Mission:</h2>
           <p>
           We aim to empower users with a user-friendly interface that allows them to input sentences, and in return, receive those sentences refined to align with the stringent standards set forth by the STE (Simplified Technical English) style guide. Our mission is to harness the power of language processing technology by fine-tuning an existing, open-sourced, commercially available Large Language Model (LLM) to seamlessly transform text into adherence with the STE style guide. Our commitment is to provide a precise, efficient, and accessible solution that elevates the quality of written communication in the style of Simplified Technical English.
           </p>
+=======
+          <h2 class="centeralign">Our Mission:</h2>
+          <p class="centeralign">We aim to empower users with a user-friendly interface that allows them to input sentences, and in return, receive those sentences refined to align with the stringent standards set forth by the STE (Simplified Technical English) style guide. Our mission is to harness the power of language processing technology by fine-tuning an existing, open-sourced, commercially available Large Language Model (LLM) to seamlessly transform text into adherence with the STE style guide. Our commitment is to provide a precise, efficient, and accessible solution that elevates the quality of written communication in the style of Simplified Technical English.</p>
+        </div>
+        <div id="content2">
+>>>>>>> 35f0ea3f9083c20b7ce764c28de9b7a1c4593a4f
           <table>
           <tr>
             <th class="table"><b>Team: </b> </th>
@@ -51,16 +58,80 @@
 
                   <i>Initial Lockheed Martin Meeting: Asked the company representatives questions regarding the requirements of the project. Presented and confirmed our choice of a pre-trained LLM (Large Language Model). Verified our understanding and ideas for the project.</i>
 
-                  <i>Second Group Meeting: Met to discuss what was covered during the Lockheed Martin Meeting. Discussed the new information from the company representative.</i>
+                  <p><i>Second Group Meeting: Met to discuss what was covered during the Lockheed Martin Meeting. Discussed the new information from the company representative.</i></p>
 
-              <h3>September 26, 2023:</h3>
+              <h2>September 26, 2023:</h2>
 
                   <i>Second Lockheed Martin Meeting: Attended but the meeting was cut short due to a company cancellation.</i>
 
-                  <i>Group Meeting: Continued to discuss the SRS and Presentation. Talked about the github page and implementation connecting to the project. Discussed how to proceed with the web application.</i>
+                  <p><i>Group Meeting: Continued to discuss the SRS and Presentation. Talked about the GitHub page and implementation connecting to the project. Discussed how to proceed with the web application.</i></p>
+
+              <h2>September 30, 2023:</h2>
+
+                  <i>Group Meeting: Discussed and finalized theme and slide topics for the presentation. Worked together to make any final changes to the slides. Decided who was going to present each slide and how the presentation should be organized.</i>
+
+              <h2>October 3, 2023</h2>
+
+                  <i>Lockheed Martin Meeting: Discussed the validation results, webpage interface, and the performance time with the representative. Received feedback about the format for the validation results. Also accepted our optimization goals for the performance time.</i>
+
+                  <p><i>Group Meeting: Discussed the interview with the company. Finished and divided the presentation slides for each member. Restructured the presentation organization to flow smoothly. Practiced Presentation multiple times to ensure time restraint was met.</i></p>
+
+              <h2>October 4, 2023</h2>
+
+                  <i>Group Meeting: Practiced the presentation. Finalized the order of the slides and other specific details. Planned any additions to the SRS document. Discussed the submission of the SRS document and PowerPoint presentation. </i>
+
         </div>
         <div id="content4">
-          Content for Tab Meeting/ will add with transcripts
+
+          <h2 class="centeralign">First Interview with Lockheed Martin</h2>
+
+          <h4>NB: In regards to the kind of scope of this project. Are there any particular functions or features that you wish to see implemented for this project?</h4>
+          <br>AD: For the scope of the project the main that we’re looking for is just a simple input and output capability of the LM itself. The end goal is you are able to submit a simple sentence, some type of text that’s formatted whatever way you want, and get some type of the return that has the sentence restructured in the way that it fits the STE style guide and the process in which we want you to do this is by using a pre-existing large language model. We don’t have a preference for which one you use.
+          <br><h4>NB:  Is there any specific rules that will need to be followed that emphasize more specifically on less is more or more technical writing? Is it more general for STE writing style?</h4>
+          <br>AD: We’re looking for a more general approach to the STE writing style, but being able to showcase that it does follow the rules. Looking for more of a general approach that the sentence will follow the STE style guide.
+          <br><h4>NB: For the open source LLM, after doing some research we found that probably the best one will be using Falcon, specifically Falcon 7B as opposed to Falcon 40B or Llama for reasons that Falcon itself is licensed with Apache 2.0 meaning that anyone can use it for commercial use or consumer use. Specifically you don’t have to pay royalties and 7B while it’s not as powerful at 40B and the reason why is because its 40 billion parameters versus 7 billion parameters. But the main reason why is because the more parameters you have the more computationally attensive it will be and 7B only requires 16GB of GPU memory and there is rarely any hardware devices that can actually run it. The 40B needs a 100BG of GPU memory so 7B will be more suited for the end consumer use due to the scope of this project and due to the scope of this project having a generalized approach we think that this will be a fine open source LLM. Is there any problems or concerns?</h4>
+          <br>AD: Highly recommend you don’t need the 40B because I think that’d it be a bit overkill, 7B should be good enough for this application.
+          <br>AD: Would you be able to test it on your own individual machines?
+          <br>NB: We’ll be using Google Colab and they allow the use of not only CPU devices but also GPU kind of computers. They allow the use of a T4 machine which barely meets the requirements for 16GB of GPU memory which is the minimum requirement. If that's the case, we can go higher on Google Colab machines, if not we can always use the HPCC. We will be using Falcob 7B, and Google Colab as our resource which is similar to Jupyter lab and notebook. More suited for machine learning.
+          <br><h4>NB: We have to train the model with data sets, we’ll be using a mixture of public and private ones. Some public datasets that we’ll be using will be coming from HuggingFace and Cackle these are community, these are platforms that provide the community with moss applications and for our purposes datasets, more specifically text generation. Are you fine with these platforms that we will be using?</h4>
+          <br>AD: Yes, HuggingFace is an excellent place to get publicly available data. Highly recommend using that one.
+          <br><h4>NB: Could you provide us some datasets to train, test them all with it would allow us to get a better understanding of the desired output for the STE and more importantly for the model itself.</h4>
+          <br>AD: For private datasets we don’t have any datasets available here at Lockheed for the STE specifically and part of the reason we chose STE as the style guide use for this project is specifically there’s a lot of public examples of it. And using private style guides like our own walkie takes a lot of paperwork and we’re kind of in the process of still filling out all that paperwork and getting it done. So for this project scope we intend for you to only use publicly available data for the STE style guide.
+          <br><h4>NB: We’ll be creating our own STE style guide of writing style sentences along with public datasets not only online but hugging fee as well. Does that sound fine?</h4>
+          <br>AD: Yes that is fine.
+          <br><h4>NB:  As mentioned earlier, they would like a simple input and output for users to interact with. Specifically we’ve decided to more or less use a web interface like a website or something like that for it to be hooked onto the LM from the open source LM. Are there any concerns that you have with us using a web interface to receive input and give output to the users or is there another kind of system you want us to use instead?</h4>
+          <br>AD:  A web interface should be fine, it would be a really good showcase of actually the overall implementation of how this works.
+          <br><h4>TD: Can you also make the interface availabe publicly, so that other people can use it?</h4>
+          <br>NB: We’ll probably be using a public domain for the web interface.
+          <br><h4>NB: As mentioned, there is a validation process. Are there any criteria you wish to emphasize on how the model should respond to certain datasets that is provided with or is it more just a generalized approach to the STE?</h4>
+          <br>AD: Validating LLM’s is a very hot topic right now in the LLM community, getting proper validation so for this case we’re just gonna go for a generalized validation. In terms of implementing or in terms of making sure its perfect or rather making sure it’s along with the STE style guide. For validation you should be good just using some type of general validation.
+          <br><h4>NB:  Do you have any final concerns or any points you wish to emphasize for this project?</h4>
+          <br>AD:  For Google Colab, does that allow multiple users or developers to work on code at the same time?
+          <br>NB: Due to the mentioned requirements allowing to use different devices such as CPU or GPU should be able to share code online since it’s from google platform and google has been known to share files easily but if not, we’ll be using github as our primary to push code onto and retrieve code from that as a more centeralized hub.
+          <br>TD: Can I ask you to display or to show the validation result on the web interfaces as well rather than just input and output. Can you show some type of validation call on the web interface as well?
+          <br>NB: We can try, but validation is a bit weird because it’s similar to testing but validation is more trying to be unbiased because testing is where we get get more specific use cases that are out there in random validation is trying to be more unbiased.
+
+          <hr>
+          <h2 class="centeralign">Second Interview with Lockheed Martin</h2>
+
+          <h4>NB: For the users, exactly are we to assume that they have a college degree of education meaning that they’ve taken college level english classes such as technical writing and they have a basic understanding of how to interact with webpages?</h4>
+          <br>AD: Yes, go ahead and assume that.
+          <br>NB: We will provide examples on the webpage just in case on how to interact with it, just for redundancy and making sure the user knows how to input it.
+          <br><h4>NB: We plan to use Gitpage and Github to make it more centralized location, we’re still currently researching if it is feasible to hookup Gitpages with a large language model. But if not we plan to use anvo.orgs which is a site that can hookup Google Colab, does that sound fine? We plan to use Gitpage for the main webpages.</h4>
+          <br>AD: That should be fine.
+          <br><h4>NB: What kind of validation do you want displayed asside from performance time, do you want a comparison value between original input and outputted sentence?</h4>
+          <br>AD: In terms of validation that sounds fine, just having a message that says how much the sentence actually changes.
+          <br>NB: Do you want a percentage value or a decimal value?
+          <br>AD: Percentage, should be more understandable from a user perspective.
+          <br>NB: For validation we will show performance time CPU and wall-time and then showing comparison value between original and output sentence.
+          <br><h4>NB: Not sure how LLM will respond of exporting it, because a limitation on  Google Colab is virtual machine to actually run it, it can only run for a maximum of 12 hours and if you buy the paid version which is the pro 1 it only last for 24 hours and that depends on user input which means we have to offload this which is why anvo.org and gitpage kinda needs to run it on the model so luckily google colab it allows for easy exporting of the model but for performance our goal is to makesure that the time it takes to input the sentence and give a corresponding output should take no longer than one minute, is that fine? Or do you want more time?</h4>
+          <br>AD: One minute is fine, anything longer will probably be a bit too slow. If you can optimize it more than a minute go for it but for those limitations that sounds right.
+          <br><h4>NB: Any comments, concerns or recommendations?</h4>
+          <br>AD: I’m going to make a recommendation, how are you guys kinda organzing kinda your team?Are you doing SCRUM stuff? What is your approach to the actual organization of your term?
+          <br>NB: When it comes to organization we don’t do scrum, but for organization we divide up the task in what we know how to do. Kinda dividing the front-in and back-in and for meetings we meet on saturdays.
+          <br>AD: That sounds good, you’re organzing your team well. It's good that you guys are kinda organzing it and everyone knows their tasks.
+
+
         </div>
         <div id="content5">
           Content for Tab Other
