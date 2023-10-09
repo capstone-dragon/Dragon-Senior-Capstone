@@ -78,15 +78,6 @@ th {
   background-color: #f2f2f2;
 }
 
-b{
-  font-size: 28px
-}
-
-.table{
-  width: 100px;
-  border-collapse: collapse;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-size: cover;
@@ -102,4 +93,17 @@ a:hover, button:hover {
 h2 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.content div table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.content div table i {
+  font-style: italic;
+  font-size: 14px;
+  color: #666666;
 }
