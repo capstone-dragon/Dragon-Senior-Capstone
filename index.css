@@ -1,3 +1,15 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .some-class {
+    font-size: 14px;
+  }
+}
+
+
 .centeralign {
   text-align: center;
 }
