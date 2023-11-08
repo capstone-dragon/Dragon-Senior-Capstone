@@ -29,6 +29,10 @@
   display: flex;
 }
 
+.soon{
+  width: 10%;
+}
+
 .tabs {
   list-style: none;
   padding: 0;
