@@ -76,7 +76,7 @@
 #content1{
   text-align: center;
 }
-#content1 table{
+.table1{
   margin: 0 auto;
   padding-top: 25px;
 }
@@ -85,14 +85,26 @@
   text-align: center;
 }
 
+.table{
+  width: 100%;
+}
 
 
-th {
+.table1 th {
   text-align:left;
   width: auto;
   border: 1px solid #ccc;
   padding: 8px;
   background-color: #f2f2f2;
+}
+
+.table3 th{
+  text-align:left;
+  width: auto;
+  border: 1px solid #ccc;
+  padding: 8px;
+  background-color: #f2f2f2;
+
 }
 
 body {
@@ -112,14 +124,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-.content div table th {
+.table3 th {
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #f2f2f2;
   text-align: left;
 }
 
-.content div table i {
+.table3 i {
   font-style: italic;
   font-size: 14px;
   color: #666666;
