@@ -10,6 +10,14 @@
   background-color: #001E30;
 }
 
+.log{
+  margin : 0;
+}
+.title{
+  text-align: center;
+  width: 100%;
+}
+
 .logo {
   width: 150px;
   margin-right: 10px;
