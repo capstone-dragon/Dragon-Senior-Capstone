@@ -11,6 +11,12 @@ var content3 = document.getElementById("content3");
 var content4 = document.getElementById("content4");
 var content5 = document.getElementById("content5");
 
+var show = document.getElementById("show");
+var show1 = document.getElementById("show1");
+var show2 = document.getElementById("show2");
+var showmore = document.getElementById("showmore");
+var showless = document.getElementById("showless");
+
 
 
 tab1.classList.add('active');
@@ -77,6 +83,24 @@ tab3.onclick = function() {
 tab4.onclick = function() {
   tab4.classList.add('active');
   content4.classList.add('active');
+  show.classList.add('active');
+  show1.classList.add('active');
+  showless.style.display = 'none';
+
+
+  showmore.onclick = function() {
+    show2.classList.add('active');
+    this.style.display = 'none';
+    showless.style.display = 'block';
+
+  }
+
+  showless.onclick = function() {
+    show2.classList.remove('active');
+    this.style.display = 'none';
+    showmore.style.display = 'block';
+
+  }
 
   tab1.classList.remove('active');
   content1.classList.remove('active');
