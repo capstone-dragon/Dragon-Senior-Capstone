@@ -10,7 +10,7 @@ Noah Brunner
 Kimora Sananikone  
 Dhan Limbu  
 
-LLM Style Guide Editor Link:   
+LLM Style Guide Editor Link:                                                                                                                                         
 https://llm-capstone.anvil.app/
 
 
