@@ -11,12 +11,16 @@ var content3 = document.getElementById("content3");
 var content4 = document.getElementById("content4");
 var content5 = document.getElementById("content5");
 
-var show = document.getElementById("show");
+var showa = document.getElementById("showa");
+var showb = document.getElementById("showb");
 var show1 = document.getElementById("show1");
 var show2 = document.getElementById("show2");
-var showmore = document.getElementById("showmore");
-var showless = document.getElementById("showless");
-
+var show3 = document.getElementById("show3");
+var show4 = document.getElementById("show4");
+var showmore1 = document.getElementById("showmore1");
+var showless1 = document.getElementById("showless1");
+var showmore2 = document.getElementById("showmore2");
+var showless2 = document.getElementById("showless2");
 
 
 tab1.classList.add('active');
@@ -83,22 +87,41 @@ tab3.onclick = function() {
 tab4.onclick = function() {
   tab4.classList.add('active');
   content4.classList.add('active');
-  show.classList.add('active');
-  show1.classList.add('active');
-  showless.style.display = 'none';
+  showa.style.display = 'block';
+  show1.style.display = 'block';
+  showless1.style.display = 'none';
 
 
-  showmore.onclick = function() {
+  showb.style.display = 'block';
+  show3.style.display = 'block';
+  showless2.style.display = 'none';
+
+
+  showmore1.onclick = function() {
     show2.classList.add('active');
     this.style.display = 'none';
-    showless.style.display = 'block';
+    showless1.style.display = 'block';
 
   }
 
-  showless.onclick = function() {
+  showmore2.onclick = function() {
+    show4.classList.add('active');
+    this.style.display = 'none';
+    showless2.style.display = 'block';
+
+  }
+
+  showless1.onclick = function() {
     show2.classList.remove('active');
     this.style.display = 'none';
-    showmore.style.display = 'block';
+    showmore1.style.display = 'block';
+
+  }
+
+  showless2.onclick = function() {
+    show4.classList.remove('active');
+    this.style.display = 'none';
+    showmore2.style.display = 'block';
 
   }
 
